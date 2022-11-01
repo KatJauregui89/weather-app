@@ -23,9 +23,9 @@ const WeatherApp = () => {
             <h1>Weather App</h1>
             <h2>{weather.name}, {weather.sys?.country}</h2>
             <img src={` http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="" />
-            <p>{isCelsius ? parseFloat(weather.main?.temp - 273.15).toFixed(2) : parseFloat(((weather.main.temp - 273.15) * 1.8) + 32).toFixed(2)} {isCelsius ? "℃" : "℉"} </p>
-            <p>{weather.weather?.[0].description}</p>
-            <p>{weather.wind?.speed} m/s</p>
+            <p className='description'>{weather.weather?.[0].description}</p>
+            <p> <i className="fa-solid fa-temperature-quarter"></i> {isCelsius ? parseFloat(weather.main?.temp - 273.15).toFixed(2) : parseFloat(((weather.main.temp - 273.15) * 1.8) + 32).toFixed(2)} {isCelsius ? "℃" : "℉"} </p>
+            <p> <i className="fa-solid fa-wind"></i> {weather.wind?.speed} m/s</p>
             <button onClick={() => setIsCelsius(!isCelsius)}> {isCelsius ? "Change to Fahrenheit" : "Change to Celsius"} </button>
         </div>
     );

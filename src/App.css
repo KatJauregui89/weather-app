@@ -47,3 +47,7 @@ button:hover{
 body{
   background-color: #809bceb9;
 }
+
+p.description{
+  font-style: italic;
+}
