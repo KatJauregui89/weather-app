@@ -30,6 +30,15 @@
 
 h1{
   margin-bottom: 1rem;
+  color: #874462;
+}
+
+h2{
+  text-decoration: wavy white 1px;
+}
+
+i{
+  color: rgb(209, 228, 246);
 }
 
 button{
@@ -38,6 +47,8 @@ button{
   border-radius: 10px;
   background: #b8e0d4;
   border: none;
+  font-weight: bold;
+  color: #263248;
 }
 
 button:hover{
