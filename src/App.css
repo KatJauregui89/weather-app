@@ -58,3 +58,17 @@ body{
 p.description{
   font-style: italic;
 }
+
+.load{
+  width: 100vh;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadtext{
+  font-size: 2rem;
+  color: #587df4;
+}

@@ -6,18 +6,18 @@ import BarLoader from "react-spinners/BarLoader";
 import WeatherApp from './components/WeatherApp';
 
 function App() {
-  const [loading, setLoading] = useState(false)
+  // const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading()
-    }, 2000)
-  }, [])
+  // useEffect(() => {
+  //   setLoading(true)
+  //   setTimeout(() => {
+  //     setLoading()
+  //   }, 2000)
+  // }, [])
 
   return (
     <div className="App">
-      {loading ?
+      {/* {loading ?
         (<BarLoader
           color={'#57C075'}
           loading={loading}
@@ -29,7 +29,10 @@ function App() {
           <WeatherApp />
         )
 
-      }
+      } */}
+
+      <WeatherApp />
+
     </div>
   )
 }
